@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Selesaikan pemesanan peralatan medis Anda bersama Oiasy Inc.">
+  <meta name="author" content="Oiasy Inc">
+  <link rel="shortcut icon" href="Logo-Oiasy.png">
+  <title>Checkout — Oiasy Inc</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="css/theme.css" rel="stylesheet">
+</head>
+<body>
+  <!-- =====================
+       NAVBAR
+  ===================== -->
+  <nav class="navbar-oiasy" id="mainNav">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between w-100">
+        <a href="index.html" class="navbar-brand-oiasy">Oiasy<span>.</span></a>
+
+        <ul class="d-none d-md-flex list-unstyled mb-0 align-items-center gap-1" style="gap:4px !important;">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="shop.html" class="nav-link">Shop</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="d-none d-md-flex align-items-center" style="gap:10px;">
+          <a href="#" class="navbar-icon-link"><i class="fa fa-user"></i></a>
+          <a href="cart.html" class="navbar-icon-link"><i class="fa fa-shopping-cart"></i></a>
+        </div>
+
+        <button class="navbar-toggler d-md-none" type="button" id="mobileToggle"
+          style="background:none;border:1px solid rgba(255,255,255,0.3);color:#fff;padding:8px 12px;border-radius:8px;cursor:pointer;">
+          <i class="fa fa-bars"></i>
+        </button>
+      </div>
+
+      <div id="mobileMenu" style="display:none;padding:16px 0 8px;">
+        <ul class="list-unstyled mb-0">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="shop.html" class="nav-link">Shop</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="d-flex gap-2 ps-2 pt-3">
+          <a href="#" class="navbar-icon-link"><i class="fa fa-user"></i></a>
+          <a href="cart.html" class="navbar-icon-link"><i class="fa fa-shopping-cart"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <div class="page-hero" style="min-height:260px;padding:140px 0 50px">
+    <div class="page-hero-bg" style="background-image:url('images/Main1.jpg')"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 reveal">
+          <div class="page-hero-eyebrow"><span class="dot" style="width:6px;height:6px;border-radius:50%;background:var(--accent);display:inline-block"></span> Checkout</div>
+          <h1>Selesaikan Pemesanan Anda</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section-pad" style="padding-top:50px">
+    <div class="container">
+
+      <!-- Steps -->
+      <div class="checkout-steps reveal">
+        <div class="co-step done"><span class="circ"><i class="fa fa-check"></i></span><span class="lbl">Keranjang</span></div>
+        <div class="co-connector"></div>
+        <div class="co-step active"><span class="circ">2</span><span class="lbl">Data & Pengiriman</span></div>
+        <div class="co-connector"></div>
+        <div class="co-step"><span class="circ">3</span><span class="lbl">Konfirmasi</span></div>
+      </div>
+
+      <div class="row mb-4 reveal">
+        <div class="col-12">
+          <div class="form-card" style="padding:18px 24px;display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+            <i class="fa fa-circle-info" style="color:var(--accent)"></i>
+            <span style="font-size:.9rem;color:var(--text)">Sudah menjadi mitra institusi kami? <a href="#" style="color:var(--primary);font-weight:700">Masuk di sini</a> untuk mengisi data otomatis.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <!-- Billing form -->
+        <div class="col-lg-7">
+          <h2 class="section-title" style="font-size:1.3rem;margin-bottom:20px">Data Institusi & Pengiriman</h2>
+          <div class="form-card form-modern">
+            <div class="row g-3 mb-3">
+              <div class="col-md-6">
+                <label class="form-label-custom" for="c_fname">Nama Depan <span class="text-danger">*</span></label>
+                <input type="text" class="form-control-custom" id="c_fname" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label-custom" for="c_lname">Nama Belakang <span class="text-danger">*</span></label>
+                <input type="text" class="form-control-custom" id="c_lname" required>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label-custom" for="c_company">Nama Institusi / Rumah Sakit</label>
+              <input type="text" class="form-control-custom" id="c_company" placeholder="Contoh: RSUP Jakarta">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label-custom" for="c_address">Alamat Pengiriman <span class="text-danger">*</span></label>
+              <input type="text" class="form-control-custom" id="c_address" placeholder="Nama jalan, nomor gedung" required>
+            </div>
+
+            <div class="row g-3 mb-3">
+              <div class="col-md-6">
+                <label class="form-label-custom" for="c_city">Kota <span class="text-danger">*</span></label>
+                <input type="text" class="form-control-custom" id="c_city" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label-custom" for="c_zip">Kode Pos <span class="text-danger">*</span></label>
+                <input type="text" class="form-control-custom" id="c_zip" required>
+              </div>
+            </div>
+
+            <div class="row g-3 mb-3">
+              <div class="col-md-6">
+                <label class="form-label-custom" for="c_email">Alamat Email <span class="text-danger">*</span></label>
+                <input type="email" class="form-control-custom" id="c_email" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label-custom" for="c_phone">Nomor Telepon <span class="text-danger">*</span></label>
+                <input type="tel" class="form-control-custom" id="c_phone" placeholder="08xx-xxxx-xxxx" required>
+              </div>
+            </div>
+
+            <div class="mb-2">
+              <label class="form-label-custom" for="c_notes">Catatan Pesanan (opsional)</label>
+              <textarea class="form-control-custom" id="c_notes" rows="3" placeholder="Instruksi khusus untuk pengiriman atau instalasi..."></textarea>
+            </div>
+          </div>
+        </div>
+
+        <!-- Order summary + payment -->
+        <div class="col-lg-5">
+          <h2 class="section-title" style="font-size:1.3rem;margin-bottom:20px">Ringkasan Pesanan</h2>
+          <div class="cart-summary" style="position:static">
+            <div style="display:flex;justify-content:space-between;font-size:.88rem;padding:10px 0;border-bottom:1px dashed var(--border)">
+              <span>SV300 Midray Ventilator ICU <strong>&times;1</strong></span>
+              <span style="color:var(--text-muted)">Hubungi untuk Harga</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;font-size:.88rem;padding:10px 0;border-bottom:1px dashed var(--border)">
+              <span>Anesthesia Machine A7 <strong>&times;1</strong></span>
+              <span style="color:var(--text-muted)">Hubungi untuk Harga</span>
+            </div>
+            <div class="cart-summary-row"><span>Subtotal</span><span>Hubungi untuk Harga</span></div>
+            <div class="cart-summary-row"><span>Estimasi Ongkir</span><span>Dikonfirmasi tim sales</span></div>
+            <div class="cart-summary-row total"><span>Total</span><span>Hubungi untuk Harga</span></div>
+
+            <h5 style="font-size:.95rem;margin:24px 0 14px">Metode Pembayaran</h5>
+            <div class="payment-option selected" onclick="selectPayment(this)">
+              <i class="fa fa-building-columns"></i>
+              <div>
+                <div style="font-weight:700;font-size:.88rem;color:var(--dark)">Transfer Bank</div>
+                <div style="font-size:.76rem;color:var(--text-muted)">Pembayaran manual ke rekening perusahaan</div>
+              </div>
+              <input type="radio" name="payment" class="form-check-input" checked>
+            </div>
+            <div class="payment-option" onclick="selectPayment(this)">
+              <i class="fa fa-file-invoice-dollar"></i>
+              <div>
+                <div style="font-weight:700;font-size:.88rem;color:var(--dark)">Termin Pembayaran (Net 30)</div>
+                <div style="font-size:.76rem;color:var(--text-muted)">Untuk institusi dengan kontrak kerja sama</div>
+              </div>
+              <input type="radio" name="payment" class="form-check-input">
+            </div>
+            <div class="payment-option" onclick="selectPayment(this)">
+              <i class="fa fa-headset"></i>
+              <div>
+                <div style="font-weight:700;font-size:.88rem;color:var(--dark)">Konsultasi dengan Tim Sales</div>
+                <div style="font-size:.76rem;color:var(--text-muted)">Tim kami akan menghubungi Anda langsung</div>
+              </div>
+              <input type="radio" name="payment" class="form-check-input">
+            </div>
+
+            <button class="btn-primary-custom w-100 justify-content-center mt-4" style="padding:14px" onclick="window.location='thankyou.html'">
+              Buat Pesanan <i class="fa fa-arrow-right"></i>
+            </button>
+            <p style="font-size:.76rem;color:var(--text-muted);margin-top:12px;text-align:center">
+              <i class="fa fa-lock" style="color:var(--accent)"></i> Data Anda dienkripsi & tidak dibagikan ke pihak ketiga
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================
+       FOOTER
+  ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="newsletter-wrap reveal">
+        <div class="row align-items-center">
+          <div class="col-md-5 mb-3 mb-md-0">
+            <h4>Tetap Terhubung Bersama Kami</h4>
+            <p>Dapatkan informasi produk terbaru, promo eksklusif, dan tips kesehatan langsung di inbox Anda.</p>
+          </div>
+          <div class="col-md-7">
+            <form class="newsletter-form" onsubmit="return handleNewsletter(event)">
+              <input type="text" placeholder="Nama lengkap Anda" required>
+              <input type="email" placeholder="Alamat email Anda" required>
+              <button type="submit">
+                <i class="fa fa-paper-plane"></i> Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-5 mb-5">
+        <div class="col-lg-4 col-md-6 reveal">
+          <a href="index.html" class="footer-logo d-block mb-4">Oiasy<span>.</span></a>
+          <p>Mitra terpercaya Anda dalam solusi kesehatan. Menghadirkan peralatan medis berkualitas dengan layanan profesional untuk Indonesia yang lebih sehat.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/share/1L7v6j1QcV/" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/oi_asy?igsh=bnY5dW92ZDlkd2Fq" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-6 reveal delay-1">
+          <h6 class="footer-heading">Perusahaan</h6>
+          <ul class="footer-links">
+            <li><a href="about.html">Tentang Kami</a></li>
+            <li><a href="services.html">Layanan</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Kontak Kami</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-6 reveal delay-2">
+          <h6 class="footer-heading">Dukungan</h6>
+          <ul class="footer-links">
+            <li><a href="contact.html">Pusat Bantuan</a></li>
+            <li><a href="blog.html">Basis Pengetahuan</a></li>
+            <li><a href="contact.html">Live Chat</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-6 reveal delay-3">
+          <h6 class="footer-heading">Karir</h6>
+          <ul class="footer-links">
+            <li><a href="#">Lowongan Kerja</a></li>
+            <li><a href="about.html">Tim Kami</a></li>
+            <li><a href="about.html">Kepemimpinan</a></li>
+            <li><a href="#">Kebijakan Privasi</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-6 reveal delay-4">
+          <h6 class="footer-heading">Produk</h6>
+          <ul class="footer-links">
+            <li><a href="shop.html">SV300 Ventilator</a></li>
+            <li><a href="shop.html">Anesthesia A7</a></li>
+            <li><a href="shop.html">A7 Midray</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+            <p class="mb-0">
+              Copyright &copy; <script>document.write(new Date().getFullYear())</script>
+              &mdash; <a href="https://oiasy.my.id">Oiasy Inc</a>. Hak cipta dilindungi.
+            </p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <a href="#" class="me-3">Syarat & Ketentuan</a>
+            <a href="#">Kebijakan Privasi</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" aria-label="Kembali ke atas">
+    <i class="fa fa-chevron-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const nav = document.getElementById('mainNav');
+    window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 50); });
+
+    document.getElementById('mobileToggle').addEventListener('click', () => {
+      const menu = document.getElementById('mobileMenu');
+      menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+    });
+
+    const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach(el => observer.observe(el));
+
+    const btn = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => { btn.classList.toggle('visible', window.scrollY > 400); });
+    btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    function showToast(msg){
+      let t = document.getElementById('siteToast');
+      if(!t){
+        t = document.createElement('div');
+        t.id = 'siteToast';
+        t.className = 'site-toast';
+        t.innerHTML = '<i class="fa fa-check-circle"></i><span></span>';
+        document.body.appendChild(t);
+      }
+      t.querySelector('span').textContent = msg;
+      t.classList.add('show');
+      clearTimeout(showToast._t);
+      showToast._t = setTimeout(()=>t.classList.remove('show'), 3200);
+    }
+    function handleNewsletter(e){
+      e.preventDefault();
+      showToast('Terima kasih! Anda berhasil berlangganan.');
+      e.target.reset();
+      return false;
+    }
+
+    function selectPayment(el){
+      document.querySelectorAll('.payment-option').forEach(p => p.classList.remove('selected'));
+      el.classList.add('selected');
+      el.querySelector('input[type="radio"]').checked = true;
+    }
+  </script>
+
+</body>
+</html>

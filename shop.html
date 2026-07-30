@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Katalog peralatan medis Oiasy Inc — ventilator, mesin anestesi, dan monitor pasien bersertifikat untuk institusi kesehatan.">
+  <meta name="keywords" content="medical equipment, healthcare, ventilator, anesthesia, monitor pasien, Oiasy">
+  <meta name="author" content="Oiasy Inc">
+  <link rel="shortcut icon" href="Logo-Oiasy.png">
+  <title>Katalog Produk — Oiasy Inc</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="css/theme.css" rel="stylesheet">
+</head>
+<body>
+  <!-- =====================
+       NAVBAR
+  ===================== -->
+  <nav class="navbar-oiasy" id="mainNav">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between w-100">
+        <a href="index.html" class="navbar-brand-oiasy">Oiasy<span>.</span></a>
+
+        <ul class="d-none d-md-flex list-unstyled mb-0 align-items-center gap-1" style="gap:4px !important;">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="shop.html" class="nav-link active">Shop</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="d-none d-md-flex align-items-center" style="gap:10px;">
+          <a href="#" class="navbar-icon-link"><i class="fa fa-user"></i></a>
+          <a href="cart.html" class="navbar-icon-link"><i class="fa fa-shopping-cart"></i></a>
+        </div>
+
+        <button class="navbar-toggler d-md-none" type="button" id="mobileToggle"
+          style="background:none;border:1px solid rgba(255,255,255,0.3);color:#fff;padding:8px 12px;border-radius:8px;cursor:pointer;">
+          <i class="fa fa-bars"></i>
+        </button>
+      </div>
+
+      <div id="mobileMenu" style="display:none;padding:16px 0 8px;">
+        <ul class="list-unstyled mb-0">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="shop.html" class="nav-link active">Shop</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="d-flex gap-2 ps-2 pt-3">
+          <a href="#" class="navbar-icon-link"><i class="fa fa-user"></i></a>
+          <a href="cart.html" class="navbar-icon-link"><i class="fa fa-shopping-cart"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <div class="page-hero-bg" style="background-image:url('images/Main3.jpg')"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 reveal">
+          <div class="page-hero-eyebrow"><span class="dot" style="width:6px;height:6px;border-radius:50%;background:var(--accent);display:inline-block"></span> Katalog Produk</div>
+          <h1>Peralatan Medis Bersertifikat untuk Institusi Kesehatan</h1>
+          <p>Jelajahi lini ventilator, mesin anestesi, dan monitor pasien pilihan — dipilih berdasarkan standar kualitas dan keandalan klinis tertinggi.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Trusted Clients -->
+  <section class="clients-section">
+    <div class="container">
+      <p class="text-center reveal" style="font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);margin-bottom:28px">Dipercaya oleh Institusi Kesehatan Terkemuka</p>
+      <div class="row gy-4 align-items-center reveal">
+        <div class="col-6 col-md-2"><img src="images/clients/client-1.png" class="img-fluid client-logo-wrap" alt="Klien 1"></div>
+        <div class="col-6 col-md-2"><img src="images/clients/client-2.png" class="img-fluid client-logo-wrap" alt="Klien 2"></div>
+        <div class="col-6 col-md-2"><img src="images/clients/client-3.png" class="img-fluid client-logo-wrap" alt="Klien 3"></div>
+        <div class="col-6 col-md-2"><img src="images/clients/client-4.png" class="img-fluid client-logo-wrap" alt="Klien 4"></div>
+        <div class="col-6 col-md-2"><img src="images/clients/client-5.png" class="img-fluid client-logo-wrap" alt="Klien 5"></div>
+        <div class="col-6 col-md-2"><img src="images/clients/client-6.png" class="img-fluid client-logo-wrap" alt="Klien 6"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop Grid -->
+  <section class="product-section" style="padding-top:20px">
+    <div class="container">
+
+      <!-- Category filter -->
+      <div class="chip-row reveal">
+        <button class="chip active">Semua Produk</button>
+        <button class="chip">Ventilator</button>
+        <button class="chip">Mesin Anestesi</button>
+        <button class="chip">Monitor Pasien</button>
+      </div>
+
+      <div class="shop-toolbar reveal">
+        <span class="result-count">Menampilkan <strong>5</strong> produk</span>
+        <select class="form-select" aria-label="Urutkan produk">
+          <option>Urutkan: Paling Relevan</option>
+          <option>Nama: A–Z</option>
+          <option>Terbaru</option>
+        </select>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-6 col-lg-4 reveal delay-1">
+          <a class="product-card" href="#" style="position:relative">
+            <span class="product-badge stock">Best Seller</span>
+            <button type="button" class="product-wishlist" aria-label="Simpan ke wishlist"><i class="fa-regular fa-heart"></i></button>
+            <div class="product-thumb"><img src="images/SV300.png" alt="SV300 Midray Ventilator ICU"></div>
+            <div class="product-body">
+              <span class="tag-chip">Ventilator</span>
+              <h3>SV300 Midray</h3>
+              <p style="font-size:.85rem;color:var(--text-muted);margin:6px 0 10px">Ventilator ICU presisi tinggi untuk perawatan pasien kritis.</p>
+              <span class="product-price">Hubungi untuk Harga</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-lg-4 reveal delay-2">
+          <a class="product-card" href="#" style="position:relative">
+            <span class="product-badge">Populer</span>
+            <button type="button" class="product-wishlist" aria-label="Simpan ke wishlist"><i class="fa-regular fa-heart"></i></button>
+            <div class="product-thumb"><img src="images/anesthesia-A7.png" alt="Anesthesia Machine A7"></div>
+            <div class="product-body">
+              <span class="tag-chip">Mesin Anestesi</span>
+              <h3>Anesthesia Machine A7</h3>
+              <p style="font-size:.85rem;color:var(--text-muted);margin:6px 0 10px">Sistem keamanan berlapis untuk prosedur operasi yang lebih aman.</p>
+              <span class="product-price">Hubungi untuk Harga</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-lg-4 reveal delay-3">
+          <a class="product-card" href="#" style="position:relative">
+            <button type="button" class="product-wishlist" aria-label="Simpan ke wishlist"><i class="fa-regular fa-heart"></i></button>
+            <div class="product-thumb"><img src="images/7-Midray.png" alt="A7 Midray Patient Monitor"></div>
+            <div class="product-body">
+              <span class="tag-chip">Monitor Pasien</span>
+              <h3>A7 Midray</h3>
+              <p style="font-size:.85rem;color:var(--text-muted);margin:6px 0 10px">Layar sentuh besar dengan konektivitas rekam medis digital.</p>
+              <span class="product-price">Hubungi untuk Harga</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-lg-4 reveal delay-1">
+          <a class="product-card" href="#" style="position:relative">
+            <span class="product-badge stock">Stok Tersedia</span>
+            <button type="button" class="product-wishlist" aria-label="Simpan ke wishlist"><i class="fa-regular fa-heart"></i></button>
+            <div class="product-thumb"><img src="images/M1000.png" alt="M1000 Patient Monitor"></div>
+            <div class="product-body">
+              <span class="tag-chip">Monitor Pasien</span>
+              <h3>M1000 Monitor</h3>
+              <p style="font-size:.85rem;color:var(--text-muted);margin:6px 0 10px">Monitor portable akurasi tinggi untuk ruang rawat & IGD.</p>
+              <span class="product-price">Hubungi untuk Harga</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-lg-4 reveal delay-2">
+          <a class="product-card" href="#" style="position:relative">
+            <span class="product-badge">Baru</span>
+            <button type="button" class="product-wishlist" aria-label="Simpan ke wishlist"><i class="fa-regular fa-heart"></i></button>
+            <div class="product-thumb"><img src="images/Anesthesia-S3.png" alt="Anesthesia S3 Workstation"></div>
+            <div class="product-body">
+              <span class="tag-chip">Mesin Anestesi</span>
+              <h3>Anesthesia S3</h3>
+              <p style="font-size:.85rem;color:var(--text-muted);margin:6px 0 10px">Kontrol digital presisi, ideal untuk kamar operasi ruang terbatas.</p>
+              <span class="product-price">Hubungi untuk Harga</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-lg-4 reveal delay-3">
+          <div class="product-card" style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px 24px;background:linear-gradient(135deg, var(--dark), var(--primary));min-height:100%">
+            <i class="fa fa-headset" style="font-size:2rem;color:var(--accent);margin-bottom:14px"></i>
+            <h3 style="color:#fff;font-size:1.05rem;margin-bottom:8px">Butuh Produk Lain?</h3>
+            <p style="color:rgba(255,255,255,.65);font-size:.85rem;margin-bottom:16px">Tim kami siap membantu mencarikan alat sesuai kebutuhan spesifik institusi Anda.</p>
+            <a href="contact.html" class="btn-outline-custom" style="padding:9px 20px;font-size:.82rem">Konsultasi Gratis</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pagination-custom reveal">
+        <a href="#" class="active">1</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================
+       FOOTER
+  ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="newsletter-wrap reveal">
+        <div class="row align-items-center">
+          <div class="col-md-5 mb-3 mb-md-0">
+            <h4>Tetap Terhubung Bersama Kami</h4>
+            <p>Dapatkan informasi produk terbaru, promo eksklusif, dan tips kesehatan langsung di inbox Anda.</p>
+          </div>
+          <div class="col-md-7">
+            <form class="newsletter-form" onsubmit="return handleNewsletter(event)">
+              <input type="text" placeholder="Nama lengkap Anda" required>
+              <input type="email" placeholder="Alamat email Anda" required>
+              <button type="submit">
+                <i class="fa fa-paper-plane"></i> Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-5 mb-5">
+        <div class="col-lg-4 col-md-6 reveal">
+          <a href="index.html" class="footer-logo d-block mb-4">Oiasy<span>.</span></a>
+          <p>Mitra terpercaya Anda dalam solusi kesehatan. Menghadirkan peralatan medis berkualitas dengan layanan profesional untuk Indonesia yang lebih sehat.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/share/1L7v6j1QcV/" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/oi_asy?igsh=bnY5dW92ZDlkd2Fq" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-6 reveal delay-1">
+          <h6 class="footer-heading">Perusahaan</h6>
+          <ul class="footer-links">
+            <li><a href="about.html">Tentang Kami</a></li>
+            <li><a href="services.html">Layanan</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Kontak Kami</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-6 reveal delay-2">
+          <h6 class="footer-heading">Dukungan</h6>
+          <ul class="footer-links">
+            <li><a href="contact.html">Pusat Bantuan</a></li>
+            <li><a href="blog.html">Basis Pengetahuan</a></li>
+            <li><a href="contact.html">Live Chat</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-6 reveal delay-3">
+          <h6 class="footer-heading">Karir</h6>
+          <ul class="footer-links">
+            <li><a href="#">Lowongan Kerja</a></li>
+            <li><a href="about.html">Tim Kami</a></li>
+            <li><a href="about.html">Kepemimpinan</a></li>
+            <li><a href="#">Kebijakan Privasi</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-6 reveal delay-4">
+          <h6 class="footer-heading">Produk</h6>
+          <ul class="footer-links">
+            <li><a href="shop.html">SV300 Ventilator</a></li>
+            <li><a href="shop.html">Anesthesia A7</a></li>
+            <li><a href="shop.html">A7 Midray</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+            <p class="mb-0">
+              Copyright &copy; <script>document.write(new Date().getFullYear())</script>
+              &mdash; <a href="https://oiasy.my.id">Oiasy Inc</a>. Hak cipta dilindungi.
+            </p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <a href="#" class="me-3">Syarat & Ketentuan</a>
+            <a href="#">Kebijakan Privasi</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" aria-label="Kembali ke atas">
+    <i class="fa fa-chevron-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const nav = document.getElementById('mainNav');
+    window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 50); });
+
+    document.getElementById('mobileToggle').addEventListener('click', () => {
+      const menu = document.getElementById('mobileMenu');
+      menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+    });
+
+    const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach(el => observer.observe(el));
+
+    const btn = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => { btn.classList.toggle('visible', window.scrollY > 400); });
+    btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    document.querySelectorAll('.chip').forEach(p => {
+      p.addEventListener('click', () => {
+        document.querySelectorAll('.chip').forEach(x => x.classList.remove('active'));
+        p.classList.add('active');
+      });
+    });
+
+    document.querySelectorAll('.product-wishlist').forEach(b => {
+      b.addEventListener('click', (e) => {
+        e.preventDefault();
+        b.querySelector('i').classList.toggle('fa-regular');
+        b.querySelector('i').classList.toggle('fa-solid');
+        b.style.color = b.querySelector('i').classList.contains('fa-solid') ? '#e0507a' : '';
+      });
+    });
+
+    function showToast(msg){
+      let t = document.getElementById('siteToast');
+      if(!t){
+        t = document.createElement('div');
+        t.id = 'siteToast';
+        t.className = 'site-toast';
+        t.innerHTML = '<i class="fa fa-check-circle"></i><span></span>';
+        document.body.appendChild(t);
+      }
+      t.querySelector('span').textContent = msg;
+      t.classList.add('show');
+      clearTimeout(showToast._t);
+      showToast._t = setTimeout(()=>t.classList.remove('show'), 3200);
+    }
+    function handleNewsletter(e){
+      e.preventDefault();
+      showToast('Terima kasih! Anda berhasil berlangganan.');
+      e.target.reset();
+      return false;
+    }
+  </script>
+
+</body>
+</html>
